@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Expanding Search Box On Click</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="search">
+        <input type="text" placeholder="Buscar....">
+        <div class="icon"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.icon').click(function(){
+                $('.search').toggleClass('active')
+            })
+        })
+    </script>
+</body>
+</html>
